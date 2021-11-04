@@ -10,17 +10,21 @@
     <p>Phone Number : +1 123-456-789-</p>
     <p>Email : myemail@email.com</p>
     <p>Github Profile link : To be updated!</p>
-    <form class="" action="index.html" method="post">
+    <form enctype="text/plain" action="mailto:info@email.com" method="post">
       <label>Your Name : </label>
-      <input type="text" name="name" placeholder="Type your name here" required>
+      <input type="text" name="yourname" placeholder="Type your name here" required>
       <br>
       <br>
       <label>Your email : </label>
-      <input type="email" name="" placeholder="Type your email here" required>
+      <input type="email" name="youremail" placeholder="Type your email here" required>
       <br>
       <br>
       <label>Do you want to signup for the email list?</label>
-      <input type="checkbox" name="">
+      <input type="checkbox" name="emaillist">
+      <br>
+      <br>
+      <label>Your message : </label>
+      <textarea name ="yourmessage" rows="5" cols="50"></textarea>
       <br>
       <br>
       <input type="submit">
