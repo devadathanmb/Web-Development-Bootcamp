@@ -32,16 +32,3 @@ h3{
   padding-top: 200px;
   position: relative;
 }
-
-
-.middle-container{
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-}
-
-.bottom-container{
-  height: 200px;
-  width: 200px;
-  background-color: red;
-}
