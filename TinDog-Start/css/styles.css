@@ -52,11 +52,16 @@ body{
   transform: rotate(25deg);
 }
 
+/* Features */
 
 /* Features icons */
 .features-icon{
   color : #ef8172;
-  font-size : 50px;
+  font-size : 60px;
+}
+
+.features-icon:hover{
+  color: #ff4c68;
 }
 
 #features{
@@ -70,6 +75,7 @@ body{
   font-weight: 700;
   font-size: 1.5rem;
 }
+
 
 #features p{
   color : #8f8f8f;
