@@ -51,3 +51,34 @@ body{
   width: 60%;
   transform: rotate(25deg);
 }
+
+
+/* Features icons */
+.features-icon{
+  color : #ef8172;
+  font-size : 50px;
+}
+
+#features{
+  text-align: center;
+}
+
+/* Features headings */
+#features h3{
+  font-family: Montserrat, sans-serif;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#features p{
+  color : #8f8f8f;
+}
+
+.features-container{
+  margin : 10rem 0;
+}
+
+.features-col{
+  padding: 0 2rem;
+}
