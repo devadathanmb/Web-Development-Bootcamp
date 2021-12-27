@@ -88,3 +88,38 @@ body{
 .features-col{
   padding: 2rem;
 }
+
+/* Testimonials Section */
+#testimonials{
+  text-align: center;
+  background-color: #ef8172;
+  color: #ffff;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.testimonials-img{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item{
+  padding : 7% 15%;
+}
+
+#press{
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
