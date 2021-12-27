@@ -11,7 +11,7 @@ h1 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 body {
@@ -48,6 +48,8 @@ body {
 .iphone-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right : 30%;
 }
 
 /* Features */
@@ -63,6 +65,8 @@ body {
 
 #features {
   text-align: center;
+  position: relative;
+  background-color: white;
 }
 
 /* Features headings */
@@ -78,7 +82,9 @@ p {
 }
 
 .features-container {
-  margin: 10rem 0;
+  /* margin: 10rem 0; */
+  padding-top : 10rem;
+  padding-bottom: 10rem;
 }
 
 .features-col {
