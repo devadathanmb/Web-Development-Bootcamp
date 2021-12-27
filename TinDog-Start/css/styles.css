@@ -152,7 +152,7 @@ h2 {
 /* Call To Action Section */
 #cta{
   background-color : #ff4c68;
-  padding : 150px;
+  padding : 7% 15%;
   text-align: center;
 }
 
@@ -169,7 +169,7 @@ h2 {
 
 /* Footer Section */
 #footer{
-  padding : 100px;
+  padding : 7% 15%;
   text-align: center;
 }
 
