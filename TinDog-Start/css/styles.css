@@ -135,3 +135,44 @@ h2 {
 .pricing-col {
   padding: 3% 2%;
 }
+
+
+@media (max-width : 1028px){
+
+  #title{
+    text-align : center;
+  }
+
+  .iphone-img{
+    position: static;
+    transform : rotate(0deg);
+  }
+}
+
+/* Call To Action Section */
+#cta{
+  background-color : #ff4c68;
+  padding : 150px;
+  text-align: center;
+}
+
+.cta-heading{
+  color : white;
+  font-weight: 900;
+  padding : 5% 0;
+  font-size: 3.25rem;
+}
+
+.cta-btn{
+  margin : 0 2rem 2rem;
+}
+
+/* Footer Section */
+#footer{
+  padding : 100px;
+  text-align: center;
+}
+
+.social-icn{
+  margin : 2rem;
+}
