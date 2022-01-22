@@ -17,4 +17,22 @@ app.post("/", function(req, res){
   res.send(ans.toString());
 });
 
+
+//What happens when the user goes to this link
+app.get("/bmicalculator", function(req, res){
+  //Send this file
+  res.sendFile(__dirname + "/bmiCalculator.html");
+});
+
+
+//What happens when the user posts the data
+app.post("/bmicalculator", function(req, res){
+  var height = parseFloat(req.body.height);
+  var weight = parseFloat(req.body.weight);
+  var bmi = weight/(Math.pow(height, 2));
+
+  //Send a response back to the user
+  res.send("Your BMI is " + bmi);
+});
+
 app.listen("3000");
