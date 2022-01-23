@@ -54,6 +54,10 @@ app.post("/", function(req, res) {
     res.sendFile(__dirname + "/failure.html");});
 });
 
+app.post("/failure", function(req, res){
+  res.redirect("/");
+});
+
 app.listen(3000, function() {
   console.log("Server is up and running on port 3000");
 });
