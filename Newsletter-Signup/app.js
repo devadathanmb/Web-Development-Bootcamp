@@ -9,15 +9,17 @@ mailchimp.setConfig({
   server: "us20"
 });
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static("public"));
+
+//Mailchimp ping response
 async function run() {
   const response = await mailchimp.ping.get();
   console.log(response);
 }
 run();
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(express.static("public"));
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
@@ -27,7 +29,6 @@ app.post("/", function(req, res) {
   const fName = req.body.firstName;
   const lName = req.body.lastName;
   const email = req.body.email;
-  console.log(fName + " " + lName + " " + email);
   const listId = "c26f8fc02e";
   const subscribingUser = {
     firstName: fName,
@@ -43,21 +44,24 @@ app.post("/", function(req, res) {
         LNAME: subscribingUser.lastName
       }
     });
-    // console.log(response);
+    res.sendFile(__dirname + "/success.html");
+    console.log("Successfully added contact. Contact id : " + response.id);
+    console.log(res.statusCode);
   }
-  run();
-  res.sendFile(__dirname + "/success.html");
-  run().catch(e => res.sendFile(__dirname + "/failure.html"));
+  run().catch(function(){
+    console.log("An error occuered");
+    console.log(res.statusCode);
+    res.sendFile(__dirname + "/failure.html");});
 });
-
-// app.post("failure", function(req, res){
-//   res.redirect("/");
-// });
 
 app.listen(3000, function() {
   console.log("Server is up and running on port 3000");
 });
 
 
-// 07c6b868647a6ad628a35e9e2c1ae9f7-us20
+
+// API Key
+ // 07c6b868647a6ad628a35e9e2c1ae9f7-us20
+
+// List ID
 // c26f8fc02e
