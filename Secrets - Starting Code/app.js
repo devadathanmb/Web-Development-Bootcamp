@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -20,10 +21,9 @@ const userSchema = new mongoose.Schema({
   password: String
 });
 
-const secret = "Thisisourlittlesecret";
 
 userSchema.plugin(encrypt, {
-  secret: secret,
+  secret: process.env.SECRET,
   encryptedFields: ['password']
 });
 
@@ -69,6 +69,8 @@ app.post("/login", (req, res) => {
         if (foundUser.password === password) {
           res.render("secrets");
         }
+      } else {
+        res.send("Could not find user");
       }
     }
   });
