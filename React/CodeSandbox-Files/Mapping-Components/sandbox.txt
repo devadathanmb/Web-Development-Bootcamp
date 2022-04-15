@@ -1,0 +1,1 @@
+https://codesandbox.io/s/mapping-components-forked-28bf6o?file=/src/components/App.jsx
