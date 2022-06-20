@@ -1,0 +1,9 @@
+/* .heading {
+  color: red;
+} */
+
+/* This is called kabab casing and it's a css convention */
+.food-img {
+  widows: 100px;
+  height: 100px;
+}
